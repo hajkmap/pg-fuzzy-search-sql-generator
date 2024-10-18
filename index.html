@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hajk Fuzzy Search Preparator</title>
+  </head>
+  <body>
+    <h1>Hajk SQL Preparator</h1>
+    <p>
+      The purpose of this small app is to make it easier to prepare SQL queries
+      to be used in Hajk. The idea is simple: enter a configuration, as it would
+      be entered into Hajk's configuration, and the app will generate a valid
+      SQL query, ready to be used in you database.
+    </p>
+    <p>
+      Note that the generated SQL contains a part that looks like this:
+      <code>:query_string</code>. This string can be replaced in your SQL editor
+      of choice (e.g. DBeaver) with the actual search query string.
+    </p>
+    <div id="app"></div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
